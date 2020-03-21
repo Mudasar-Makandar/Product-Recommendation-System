@@ -29,8 +29,7 @@ class NNClassifer(nn.Module):
         nn.Sigmoid(),
         nn.Linear(32, 16),
         nn.Sigmoid(),
-        nn.Linear(24, self.out_dim),
-        nn.Sigmoid()
+        nn.Linear(24, self.out_dim)
     )
 
 
