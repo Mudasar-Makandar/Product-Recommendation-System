@@ -17,7 +17,7 @@ class DataReader(Dataset):
         super(DataReader, self).__init__()
         self.dataframe = pd.read_csv(file_path)
         self.mapping_dict = mapping_dict
-        self.target_cols = target_cols1
+        self.target_cols = target_cols
         self.cols_to_use = cols_to_use
         self.verbose = verbose
 
