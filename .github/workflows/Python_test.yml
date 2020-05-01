@@ -8,5 +8,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run python class test
         run: |
+          sudo apt-get install python3-setuptools
           pip3 install -r requirements.txt
           python3 test.py
