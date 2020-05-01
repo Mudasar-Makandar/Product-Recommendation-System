@@ -17,14 +17,14 @@ class DataReader(Dataset):
         super(DataReader, self).__init__()
         self.dataframe = pd.read_csv(file_path)
         self.mapping_dict = mapping_dict
-        self.target_cols = target_cols
+        self.target_cols = target_cols1
         self.cols_to_use = cols_to_use
         self.verbose = verbose
-        
+
     def __len__(self):
         return len(self.dataframe)
 
-                        
+
     def __getitem__(self, idx):
         self.unique_dataframe = self.dataframe[self.dataframe['ncodpers']==list(self.dataframe["ncodpers"].unique())[idx]]
         self.unique_dataframe = self.unique_dataframe.reset_index(drop=True)
@@ -62,4 +62,3 @@ if __init__=="__main__":
 	dataloader = DataLoader(data_loader, batch_size=1)
 	data_iter = iter(dataloader)
 	x,y = data_iter.next()
-    
