@@ -10,7 +10,7 @@ class RecommenderNetwork(nn.Module):
                  product_in_dim, hidden_dim, product_out_dim,
                  verbose=False):
         super(RecommenderNetwork, self).__init__()
-        self.profile_in_dim = profile_in_dim
+        self.profile_in_dim = profile_in_dim2
         self.profile_out_dim = profile_out_dim
         self.product_in_dim = profile_in_dim
         self.hidden_dim = hidden_dim
