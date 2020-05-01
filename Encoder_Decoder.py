@@ -71,7 +71,7 @@ class RecommenderNetwork(nn.Module):
 
 
 
-if __init__=="__main__":
+if __name__=="__main__":
 	net = RecommenderNetwork(profile_in_dim=17,profile_out_dim= 4,
                          product_in_dim=24, hidden_dim=32,
                          product_out_dim=24, verbose=True)
